@@ -1,0 +1,23 @@
+{
+  "name": "good_bot",
+  "version": "1.0.0",
+  "description": "> Trying to Make a Good Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lugia-is-OP/Good_Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lugia-is-OP/Good_Bot/issues"
+  },
+  "homepage": "https://github.com/Lugia-is-OP/Good_Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}

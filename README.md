@@ -1,1 +1,2 @@
-"# Good_Bot" 
+# Good_Bot
+> Trying to Make a Good Bot
