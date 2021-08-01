@@ -9,5 +9,9 @@ module.exports = (Discord, client, message) => {
 
     if(!command) return;
 
-    command.execute(client, message, args, Discord);
+    try {
+        command.execute(client, message, cmd, args, Discord);
+    } catch (err) {
+        console.log(err);
+    }
 }
