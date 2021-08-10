@@ -1,12 +1,16 @@
-const Discord = require("discord.js")
-const client = new Discord.Client();
-require('dotenv').config()
+const { Client, Collection } = require("discord.js");
 
-client.commands = new  Discord.Collection();
-client.events = new Discord.Collection();
+const client = new Client({
+    intents: 32767,
+});
+module.exports = client;
 
-['command_handler', 'event_handler'].forEach(handler => {
-    require(`./handlers/${handler}`)(client, Discord);
-})
+// Global Variables
+client.commands = new Collection();
+client.slashCommands = new Collection();
+client.config = require("./config.json");
 
-client.login(process.env.BOT_TOKEN)
+// Initializing the project
+require("./handler")(client);
+
+client.login(client.config.token);

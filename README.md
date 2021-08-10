@@ -1,2 +1,3 @@
-# Good_Bot
-> Trying to Make a Good Bot
+`npm install` - install all required dependancies
+
+`node index.js` - start the project
